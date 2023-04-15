@@ -7,8 +7,6 @@
     
 import CoreData
 import SwiftUI
-import UserInterface
-import Util
 
 public struct CameraView: View {
   @ObservedObject private var viewModel: CameraPreviewViewModel

@@ -7,8 +7,6 @@
 
 import CoreData
 import SwiftUI
-import UserInterface
-import Util
 
 public struct MainView: View {
   private var coreDataHelper: CoreDataHelper

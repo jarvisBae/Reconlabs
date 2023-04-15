@@ -5,6 +5,9 @@ import PackageDescription
 
 let package = Package(
   name: "Util",
+  platforms: [
+    .iOS(.v16)
+  ],
   products: [
     // Products define the executables and libraries a package produces, and make them visible to other packages.
     .library(
@@ -21,7 +24,14 @@ let package = Package(
     // Targets can depend on other targets in this package, and on products in packages this package depends on.
     .target(
       name: "Util",
-      dependencies: []
+      dependencies: [],
+      resources: [
+        //        .process("Resources/Lotties/Reconlabs"),
+//        .process("Resources/Lotties/Reconlabs.xcdatamodeld"),
+//        .process("Model")
+//        .process("Model/Reconlabs.xcdatamodeld")
+        .process("Source/Sample/Resources/Reconlabs.xcdatamodeld")
+      ]
     ),
     .testTarget(
       name: "UtilTests",
