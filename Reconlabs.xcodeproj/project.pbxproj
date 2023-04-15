@@ -54,6 +54,11 @@
 		9B302E1B29E98F8C00F571CB /* ReconlabsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReconlabsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9B302E2A29E9912000F571CB /* .swiftformat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .swiftformat; sourceTree = "<group>"; };
 		9B302E2B29E9912000F571CB /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		9B7DACFC29EA34A300BC12A0 /* UserInterface */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = UserInterface; sourceTree = "<group>"; };
+		9B7DACFD29EA34AC00BC12A0 /* FeatureMain */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = FeatureMain; sourceTree = "<group>"; };
+		9B7DACFE29EA34B400BC12A0 /* Features */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Features; sourceTree = "<group>"; };
+		9B7DACFF29EA34C500BC12A0 /* Util */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Util; sourceTree = "<group>"; };
+		9BE3504429EA404500F89E28 /* FeatureCamera */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = FeatureCamera; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +153,11 @@
 		9B302E2829E990AE00F571CB /* Packages */ = {
 			isa = PBXGroup;
 			children = (
+				9B7DACFE29EA34B400BC12A0 /* Features */,
+				9B7DACFD29EA34AC00BC12A0 /* FeatureMain */,
+				9BE3504429EA404500F89E28 /* FeatureCamera */,
+				9B7DACFC29EA34A300BC12A0 /* UserInterface */,
+				9B7DACFF29EA34C500BC12A0 /* Util */,
 			);
 			name = Packages;
 			sourceTree = "<group>";
