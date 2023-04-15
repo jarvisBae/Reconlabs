@@ -17,15 +17,29 @@ public struct CameraView: View {
   }
     
   public var body: some View {
-    VStack {
-      HStack {
-        ButtonView(title: "Close", imageName: "xmark", width: 120, height: 60, action: onCloseClick)
+    ZStack {
+      CameraPreviewView()
+      VStack {
+        HStack {
+          ButtonView(title: "Close", imageName: "xmark", width: 120, height: 60, action: onCloseClick)
+          Spacer()
+        }
+        .padding(EdgeInsets(top: 0, leading: 16, bottom: 0, trailing: 16))
         Spacer()
+        HorizontalButtonView(xClickAction: {
+          Log.d("x click")
+        }, yClickAction: {
+          Log.d("y click")
+        }, zClickAction: {
+          Log.d("z click")
+        })
+        CircleButtonView {
+          Log.d("capture click")
+        }
       }
-      .padding(EdgeInsets(top: 0, leading: 16, bottom: 0, trailing: 16))
-      Spacer()
+      .padding(EdgeInsets(top: 16, leading: 0, bottom: 16, trailing: 0))
+      .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
     }
-    .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
   }
 }
 
