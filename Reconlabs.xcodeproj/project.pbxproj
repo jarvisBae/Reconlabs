@@ -19,6 +19,7 @@
 		9B302E2C29E9912000F571CB /* .swiftformat in Resources */ = {isa = PBXBuildFile; fileRef = 9B302E2A29E9912000F571CB /* .swiftformat */; };
 		9B302E2D29E9912000F571CB /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 9B302E2B29E9912000F571CB /* .swiftlint.yml */; };
 		9B7DAD0129EA34F100BC12A0 /* Features in Frameworks */ = {isa = PBXBuildFile; productRef = 9B7DAD0029EA34F100BC12A0 /* Features */; };
+		9BE3504629EA944200F89E28 /* FeatureCamera in Frameworks */ = {isa = PBXBuildFile; productRef = 9BE3504529EA944200F89E28 /* FeatureCamera */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BE3504629EA944200F89E28 /* FeatureCamera in Frameworks */,
 				9B7DAD0129EA34F100BC12A0 /* Features in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -187,6 +189,7 @@
 			name = Reconlabs;
 			packageProductDependencies = (
 				9B7DAD0029EA34F100BC12A0 /* Features */,
+				9BE3504529EA944200F89E28 /* FeatureCamera */,
 			);
 			productName = Reconlabs;
 			productReference = 9B302DF629E98F8B00F571CB /* Reconlabs.app */;
@@ -510,6 +513,7 @@
 				DEVELOPMENT_TEAM = 23P4QWNW7G;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "카메라 권한이 필요합니다.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -540,6 +544,7 @@
 				DEVELOPMENT_TEAM = 23P4QWNW7G;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "카메라 권한이 필요합니다.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -680,6 +685,10 @@
 		9B7DAD0029EA34F100BC12A0 /* Features */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Features;
+		};
+		9BE3504529EA944200F89E28 /* FeatureCamera */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FeatureCamera;
 		};
 /* End XCSwiftPackageProductDependency section */
 
