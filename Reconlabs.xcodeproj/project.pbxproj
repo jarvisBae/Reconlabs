@@ -16,6 +16,9 @@
 		9B302E1029E98F8C00F571CB /* ReconlabsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B302E0F29E98F8C00F571CB /* ReconlabsTests.swift */; };
 		9B302E1A29E98F8C00F571CB /* ReconlabsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B302E1929E98F8C00F571CB /* ReconlabsUITests.swift */; };
 		9B302E1C29E98F8C00F571CB /* ReconlabsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B302E1B29E98F8C00F571CB /* ReconlabsUITestsLaunchTests.swift */; };
+		9B302E2C29E9912000F571CB /* .swiftformat in Resources */ = {isa = PBXBuildFile; fileRef = 9B302E2A29E9912000F571CB /* .swiftformat */; };
+		9B302E2D29E9912000F571CB /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 9B302E2B29E9912000F571CB /* .swiftlint.yml */; };
+		9B7DAD0129EA34F100BC12A0 /* Features in Frameworks */ = {isa = PBXBuildFile; productRef = 9B7DAD0029EA34F100BC12A0 /* Features */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,13 @@
 		9B302E1529E98F8C00F571CB /* ReconlabsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReconlabsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B302E1929E98F8C00F571CB /* ReconlabsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReconlabsUITests.swift; sourceTree = "<group>"; };
 		9B302E1B29E98F8C00F571CB /* ReconlabsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReconlabsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9B302E2A29E9912000F571CB /* .swiftformat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .swiftformat; sourceTree = "<group>"; };
+		9B302E2B29E9912000F571CB /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		9B7DACFC29EA34A300BC12A0 /* UserInterface */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = UserInterface; sourceTree = "<group>"; };
+		9B7DACFD29EA34AC00BC12A0 /* FeatureMain */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = FeatureMain; sourceTree = "<group>"; };
+		9B7DACFE29EA34B400BC12A0 /* Features */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Features; sourceTree = "<group>"; };
+		9B7DACFF29EA34C500BC12A0 /* Util */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Util; sourceTree = "<group>"; };
+		9BE3504429EA404500F89E28 /* FeatureCamera */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = FeatureCamera; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B7DAD0129EA34F100BC12A0 /* Features in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,10 +89,14 @@
 		9B302DED29E98F8B00F571CB = {
 			isa = PBXGroup;
 			children = (
+				9B302E2A29E9912000F571CB /* .swiftformat */,
+				9B302E2B29E9912000F571CB /* .swiftlint.yml */,
+				9B302E2829E990AE00F571CB /* Packages */,
 				9B302DF829E98F8B00F571CB /* Reconlabs */,
 				9B302E0E29E98F8C00F571CB /* ReconlabsTests */,
 				9B302E1829E98F8C00F571CB /* ReconlabsUITests */,
 				9B302DF729E98F8B00F571CB /* Products */,
+				9B302E3029E9936C00F571CB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -133,6 +148,25 @@
 			path = ReconlabsUITests;
 			sourceTree = "<group>";
 		};
+		9B302E2829E990AE00F571CB /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				9B7DACFE29EA34B400BC12A0 /* Features */,
+				9B7DACFD29EA34AC00BC12A0 /* FeatureMain */,
+				9BE3504429EA404500F89E28 /* FeatureCamera */,
+				9B7DACFC29EA34A300BC12A0 /* UserInterface */,
+				9B7DACFF29EA34C500BC12A0 /* Util */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		9B302E3029E9936C00F571CB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -140,6 +174,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9B302E1F29E98F8C00F571CB /* Build configuration list for PBXNativeTarget "Reconlabs" */;
 			buildPhases = (
+				9B302E2F29E9914300F571CB /* SwiftFormat Script */,
+				9B302E2E29E9912900F571CB /* SwiftLint Script */,
 				9B302DF229E98F8B00F571CB /* Sources */,
 				9B302DF329E98F8B00F571CB /* Frameworks */,
 				9B302DF429E98F8B00F571CB /* Resources */,
@@ -149,6 +185,9 @@
 			dependencies = (
 			);
 			name = Reconlabs;
+			packageProductDependencies = (
+				9B7DAD0029EA34F100BC12A0 /* Features */,
+			);
 			productName = Reconlabs;
 			productReference = 9B302DF629E98F8B00F571CB /* Reconlabs.app */;
 			productType = "com.apple.product-type.application";
@@ -237,8 +276,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B302E2D29E9912000F571CB /* .swiftlint.yml in Resources */,
 				9B302E0129E98F8C00F571CB /* Preview Assets.xcassets in Resources */,
 				9B302DFE29E98F8C00F571CB /* Assets.xcassets in Resources */,
+				9B302E2C29E9912000F571CB /* .swiftformat in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +298,47 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9B302E2E29E9912900F571CB /* SwiftLint Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "SwiftLint Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nexport PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		9B302E2F29E9914300F571CB /* SwiftFormat Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "SwiftFormat Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nexport PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftformat > /dev/null; then\n  swiftformat .\nelse\n  echo \"warning: SwiftFormat not installed, download from https://github.com/nicklockwood/SwiftFormat\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9B302DF229E98F8B00F571CB /* Sources */ = {
@@ -433,6 +515,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -462,6 +545,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -591,6 +675,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9B7DAD0029EA34F100BC12A0 /* Features */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Features;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		9B302E0429E98F8C00F571CB /* Reconlabs.xcdatamodeld */ = {
