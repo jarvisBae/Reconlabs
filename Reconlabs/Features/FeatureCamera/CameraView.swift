@@ -35,7 +35,6 @@ public struct CameraView: View {
           Log.d("z click")
         })
         CircleButtonView {
-          Log.d("capture click")
           viewModel.takePhoto()
         }
       }

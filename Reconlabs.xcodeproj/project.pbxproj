@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9B10E38129EB1BCB00F12BBC /* NPhotoEntity+Class.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B10E38029EB1BCB00F12BBC /* NPhotoEntity+Class.swift */; };
 		9B10E38329EB1BEA00F12BBC /* NPhotoEntity+Properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B10E38229EB1BEA00F12BBC /* NPhotoEntity+Properties.swift */; };
+		9B10E38529EB1F7900F12BBC /* ImageGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B10E38429EB1F7900F12BBC /* ImageGridView.swift */; };
 		9B302DFA29E98F8B00F571CB /* ReconlabsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B302DF929E98F8B00F571CB /* ReconlabsApp.swift */; };
 		9B302DFE29E98F8C00F571CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B302DFD29E98F8C00F571CB /* Assets.xcassets */; };
 		9B302E0129E98F8C00F571CB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B302E0029E98F8C00F571CB /* Preview Assets.xcassets */; };
@@ -24,11 +25,7 @@
 		9B680EAB29EB185600438853 /* AVCaptureSessionPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B680EA429EB185600438853 /* AVCaptureSessionPreview.swift */; };
 		9B680EAC29EB185600438853 /* CircleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B680EA529EB185600438853 /* CircleButtonView.swift */; };
 		9B680EAD29EB185600438853 /* CameraPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B680EA629EB185600438853 /* CameraPreviewView.swift */; };
-		9B680EAE29EB185600438853 /* UserInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B680EA729EB185600438853 /* UserInterface.swift */; };
-		9B680EB629EB187C00438853 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B680EAF29EB187C00438853 /* Bundle+Extension.swift */; };
-		9B680EB829EB187C00438853 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B680EB129EB187C00438853 /* Util.swift */; };
 		9B680EB929EB187C00438853 /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B680EB229EB187C00438853 /* CoreDataHelper.swift */; };
-		9B680EBA29EB187C00438853 /* PersistenceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B680EB329EB187C00438853 /* PersistenceHelper.swift */; };
 		9B680EBC29EB187C00438853 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B680EB529EB187C00438853 /* Log.swift */; };
 		9B680EC029EB18CB00438853 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B680EBF29EB18CB00438853 /* CameraView.swift */; };
 		9B680EC229EB18D600438853 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B680EC129EB18D600438853 /* MainView.swift */; };
@@ -55,6 +52,7 @@
 /* Begin PBXFileReference section */
 		9B10E38029EB1BCB00F12BBC /* NPhotoEntity+Class.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NPhotoEntity+Class.swift"; sourceTree = "<group>"; };
 		9B10E38229EB1BEA00F12BBC /* NPhotoEntity+Properties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NPhotoEntity+Properties.swift"; sourceTree = "<group>"; };
+		9B10E38429EB1F7900F12BBC /* ImageGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGridView.swift; sourceTree = "<group>"; };
 		9B302DF629E98F8B00F571CB /* Reconlabs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reconlabs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B302DF929E98F8B00F571CB /* ReconlabsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReconlabsApp.swift; sourceTree = "<group>"; };
 		9B302DFD29E98F8C00F571CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -73,11 +71,7 @@
 		9B680EA429EB185600438853 /* AVCaptureSessionPreview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVCaptureSessionPreview.swift; sourceTree = "<group>"; };
 		9B680EA529EB185600438853 /* CircleButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleButtonView.swift; sourceTree = "<group>"; };
 		9B680EA629EB185600438853 /* CameraPreviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraPreviewView.swift; sourceTree = "<group>"; };
-		9B680EA729EB185600438853 /* UserInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInterface.swift; sourceTree = "<group>"; };
-		9B680EAF29EB187C00438853 /* Bundle+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
-		9B680EB129EB187C00438853 /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		9B680EB229EB187C00438853 /* CoreDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
-		9B680EB329EB187C00438853 /* PersistenceHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistenceHelper.swift; sourceTree = "<group>"; };
 		9B680EB529EB187C00438853 /* Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		9B680EBF29EB18CB00438853 /* CameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		9B680EC129EB18D600438853 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -136,13 +130,13 @@
 		9B302DF829E98F8B00F571CB /* Reconlabs */ = {
 			isa = PBXGroup;
 			children = (
-				9B302DF929E98F8B00F571CB /* ReconlabsApp.swift */,
 				9B680EBE29EB189A00438853 /* Entities */,
 				9B680EBD29EB188000438853 /* Helpers */,
 				9B680EA029EB182800438853 /* UserInterface */,
 				9B680E9F29EB182200438853 /* Utils */,
 				9B680E9C29EB17FE00438853 /* Features */,
 				9B680EC929EB199E00438853 /* Reconlabs.xcdatamodeld */,
+				9B302DF929E98F8B00F571CB /* ReconlabsApp.swift */,
 				9B302DFD29E98F8C00F571CB /* Assets.xcassets */,
 				9B302DFF29E98F8C00F571CB /* Preview Content */,
 			);
@@ -208,6 +202,7 @@
 		9B680E9E29EB181400438853 /* FeatureCamera */ = {
 			isa = PBXGroup;
 			children = (
+				9B680EA129EB185600438853 /* CameraPreviewViewModel.swift */,
 				9B680EBF29EB18CB00438853 /* CameraView.swift */,
 			);
 			path = FeatureCamera;
@@ -216,9 +211,7 @@
 		9B680E9F29EB182200438853 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				9B680EAF29EB187C00438853 /* Bundle+Extension.swift */,
 				9B680EB529EB187C00438853 /* Log.swift */,
-				9B680EB129EB187C00438853 /* Util.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -229,10 +222,9 @@
 				9B680EA429EB185600438853 /* AVCaptureSessionPreview.swift */,
 				9B680EA329EB185600438853 /* ButtonView.swift */,
 				9B680EA629EB185600438853 /* CameraPreviewView.swift */,
-				9B680EA129EB185600438853 /* CameraPreviewViewModel.swift */,
 				9B680EA529EB185600438853 /* CircleButtonView.swift */,
 				9B680EA229EB185600438853 /* HorizontalButtonView.swift */,
-				9B680EA729EB185600438853 /* UserInterface.swift */,
+				9B10E38429EB1F7900F12BBC /* ImageGridView.swift */,
 			);
 			path = UserInterface;
 			sourceTree = "<group>";
@@ -242,7 +234,6 @@
 			children = (
 				9B302E0229E98F8C00F571CB /* Persistence.swift */,
 				9B680EB229EB187C00438853 /* CoreDataHelper.swift */,
-				9B680EB329EB187C00438853 /* PersistenceHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -435,14 +426,12 @@
 			files = (
 				9B680EA929EB185600438853 /* HorizontalButtonView.swift in Sources */,
 				9B680EAD29EB185600438853 /* CameraPreviewView.swift in Sources */,
+				9B10E38529EB1F7900F12BBC /* ImageGridView.swift in Sources */,
 				9B680EC029EB18CB00438853 /* CameraView.swift in Sources */,
 				9B680EC229EB18D600438853 /* MainView.swift in Sources */,
-				9B680EB629EB187C00438853 /* Bundle+Extension.swift in Sources */,
 				9B680EAC29EB185600438853 /* CircleButtonView.swift in Sources */,
 				9B10E38329EB1BEA00F12BBC /* NPhotoEntity+Properties.swift in Sources */,
-				9B680EAE29EB185600438853 /* UserInterface.swift in Sources */,
 				9B680EBC29EB187C00438853 /* Log.swift in Sources */,
-				9B680EB829EB187C00438853 /* Util.swift in Sources */,
 				9B680EAB29EB185600438853 /* AVCaptureSessionPreview.swift in Sources */,
 				9B680ECB29EB199E00438853 /* Reconlabs.xcdatamodeld in Sources */,
 				9B10E38129EB1BCB00F12BBC /* NPhotoEntity+Class.swift in Sources */,
@@ -450,7 +439,6 @@
 				9B680EB929EB187C00438853 /* CoreDataHelper.swift in Sources */,
 				9B302E0329E98F8C00F571CB /* Persistence.swift in Sources */,
 				9B680EA829EB185600438853 /* CameraPreviewViewModel.swift in Sources */,
-				9B680EBA29EB187C00438853 /* PersistenceHelper.swift in Sources */,
 				9B302DFA29E98F8B00F571CB /* ReconlabsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

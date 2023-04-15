@@ -15,7 +15,7 @@ protocol CameraPreviewProtocol {
   func stopSession()
   func takePhoto()
   func savePhotoToCoreData(imageData: Data)
-//  func loadPhotosFromCoreData() -> [MyPhotoEntity]
+  func loadPhotosFromCoreData() -> [NPhotoEntity]
 }
 
 public class CameraPreviewViewModel: NSObject, ObservableObject {
@@ -102,7 +102,7 @@ extension CameraPreviewViewModel: CameraPreviewProtocol {
   }
   
   /// load photos
-//  func loadPhotosFromCoreData() -> [MyPhotoEntity] {
-//    coreDataHelper.loadPhotos()
-//  }
+  func loadPhotosFromCoreData() -> [NPhotoEntity] {
+    coreDataHelper.loadPhotos()
+  }
 }

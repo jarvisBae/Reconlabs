@@ -10,18 +10,20 @@ import SwiftUI
 @main
 struct ReconlabsApp: App {
   let persistenceController = PersistenceController.shared
-//  let persistenceController = PersistenceHelper.shared
   @State private var isPresented = false
+  @State private var refreshToggle = false
   @Environment(\.dismiss) var dismiss
 
   var body: some Scene {
     WindowGroup {
-      MainView(context: persistenceController.container.viewContext, onButtonClick: {
+      MainView(coreDataHelper: CoreDataHelper(context: persistenceController.container.viewContext), refreshToggle: $refreshToggle, onButtonClick: {
         isPresented.toggle()
+        refreshToggle = false
       })
       .fullScreenCover(isPresented: $isPresented, content: {
         CameraView(context: persistenceController.container.viewContext, onCloseClick: {
           isPresented = false
+          refreshToggle = true
         })
       })
     }
