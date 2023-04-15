@@ -5,17 +5,26 @@
 // Copyright (c) 2023 ADLiveOn All rights reserved.
 // Swift Version 5.0
     
-
+import FeatureCamera
+import FeatureMain
 import SwiftUI
 
 @main
 struct ReconlabsApp: App {
-    let persistenceController = PersistenceController.shared
+  let persistenceController = PersistenceController.shared
+  @State private var isPresented = false
+  @Environment(\.dismiss) var dismiss
 
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
-        }
+  var body: some Scene {
+    WindowGroup {
+      MainView(onButtonClick: {
+        isPresented.toggle()
+      })
+      .fullScreenCover(isPresented: $isPresented, content: {
+        CameraView(onCloseClick: {
+          isPresented = false
+        })
+      })
     }
+  }
 }
