@@ -7,26 +7,18 @@
 
 import CoreData
 import SwiftUI
-import UserInterface
-import Util
 
 public struct MainView: View {
-  private var coreDataHelper: CoreDataHelper
-  public let onButtonClick: () -> Void
-    
-  public init(context: NSManagedObjectContext, onButtonClick: @escaping () -> Void) {
-    self.onButtonClick = onButtonClick
-    self.coreDataHelper = CoreDataHelper(context: context)
-  }
+  let coreDataHelper: CoreDataHelper
+  @Binding var refreshToggle: Bool
+  let onButtonClick: () -> Void
 
   public var body: some View {
     NavigationView {
       VStack {
         ButtonView(title: "AR Camera", imageName: "camera", action: onButtonClick)
         Spacer()
-        List(coreDataHelper.loadPhotos(), id: \.self) { photo in
-          Text("Photo ID : \(photo.description)")
-        }
+        ImageGridView(refreshToggle: $refreshToggle, coreDataHelper: coreDataHelper)
       }
       .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
     }
@@ -35,6 +27,6 @@ public struct MainView: View {
 
 struct MainView_Previews: PreviewProvider {
   static var previews: some View {
-    Text("main view")
+    Text("")
   }
 }
