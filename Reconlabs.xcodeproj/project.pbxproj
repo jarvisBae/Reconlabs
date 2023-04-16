@@ -10,6 +10,7 @@
 		9B10E38129EB1BCB00F12BBC /* NPhotoEntity+Class.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B10E38029EB1BCB00F12BBC /* NPhotoEntity+Class.swift */; };
 		9B10E38329EB1BEA00F12BBC /* NPhotoEntity+Properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B10E38229EB1BEA00F12BBC /* NPhotoEntity+Properties.swift */; };
 		9B10E38529EB1F7900F12BBC /* ImageGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B10E38429EB1F7900F12BBC /* ImageGridView.swift */; };
+		9B10E38729EB896700F12BBC /* ARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B10E38629EB896700F12BBC /* ARView.swift */; };
 		9B302DFA29E98F8B00F571CB /* ReconlabsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B302DF929E98F8B00F571CB /* ReconlabsApp.swift */; };
 		9B302DFE29E98F8C00F571CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B302DFD29E98F8C00F571CB /* Assets.xcassets */; };
 		9B302E0129E98F8C00F571CB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B302E0029E98F8C00F571CB /* Preview Assets.xcassets */; };
@@ -53,6 +54,7 @@
 		9B10E38029EB1BCB00F12BBC /* NPhotoEntity+Class.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NPhotoEntity+Class.swift"; sourceTree = "<group>"; };
 		9B10E38229EB1BEA00F12BBC /* NPhotoEntity+Properties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NPhotoEntity+Properties.swift"; sourceTree = "<group>"; };
 		9B10E38429EB1F7900F12BBC /* ImageGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGridView.swift; sourceTree = "<group>"; };
+		9B10E38629EB896700F12BBC /* ARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARView.swift; sourceTree = "<group>"; };
 		9B302DF629E98F8B00F571CB /* Reconlabs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reconlabs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B302DF929E98F8B00F571CB /* ReconlabsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReconlabsApp.swift; sourceTree = "<group>"; };
 		9B302DFD29E98F8C00F571CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -225,6 +227,7 @@
 				9B680EA529EB185600438853 /* CircleButtonView.swift */,
 				9B680EA229EB185600438853 /* HorizontalButtonView.swift */,
 				9B10E38429EB1F7900F12BBC /* ImageGridView.swift */,
+				9B10E38629EB896700F12BBC /* ARView.swift */,
 			);
 			path = UserInterface;
 			sourceTree = "<group>";
@@ -429,6 +432,7 @@
 				9B10E38529EB1F7900F12BBC /* ImageGridView.swift in Sources */,
 				9B680EC029EB18CB00438853 /* CameraView.swift in Sources */,
 				9B680EC229EB18D600438853 /* MainView.swift in Sources */,
+				9B10E38729EB896700F12BBC /* ARView.swift in Sources */,
 				9B680EAC29EB185600438853 /* CircleButtonView.swift in Sources */,
 				9B10E38329EB1BEA00F12BBC /* NPhotoEntity+Properties.swift in Sources */,
 				9B680EBC29EB187C00438853 /* Log.swift in Sources */,

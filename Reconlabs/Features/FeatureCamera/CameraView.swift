@@ -9,17 +9,19 @@ import CoreData
 import SwiftUI
 
 public struct CameraView: View {
-  @ObservedObject private var viewModel: CameraPreviewViewModel
-  public let onCloseClick: () -> Void
-      
-  public init(context: NSManagedObjectContext, onCloseClick: @escaping () -> Void) {
+  let coreDataHelper: CoreDataHelper
+  let onCloseClick: () -> Void
+  @State private var arView: ARView
+  
+  init(coreDataHelper: CoreDataHelper, onCloseClick: @escaping () -> Void) {
+    self.coreDataHelper = coreDataHelper
     self.onCloseClick = onCloseClick
-    self.viewModel = CameraPreviewViewModel(context: context)
+    self._arView = State(initialValue: ARView(coreDataHelper: coreDataHelper))
   }
     
   public var body: some View {
     ZStack {
-      CameraPreviewView(viewModel: viewModel)
+      arView.edgesIgnoringSafeArea(.all)
       VStack {
         HStack {
           ButtonView(title: "Close", imageName: "xmark", width: 120, height: 60, action: onCloseClick)
@@ -34,9 +36,9 @@ public struct CameraView: View {
         }, zClickAction: {
           Log.d("z click")
         })
-        CircleButtonView {
-          viewModel.takePhoto()
-        }
+        CircleButtonView(takePhoto: {
+          arView.takePhoto()
+        })
       }
       .padding(EdgeInsets(top: 16, leading: 0, bottom: 16, trailing: 0))
       .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)

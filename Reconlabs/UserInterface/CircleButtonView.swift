@@ -8,14 +8,14 @@
 import SwiftUI
 
 public struct CircleButtonView: View {
-  let action: () -> Void
+  let takePhoto: () -> Void
     
-  public init(action: @escaping () -> Void) {
-    self.action = action
+  public init(takePhoto: @escaping () -> Void) {
+    self.takePhoto = takePhoto
   }
     
   public var body: some View {
-    Button(action: action, label: {
+    Button(action: takePhoto, label: {
       ZStack {
         Circle()
           .fill(Color.white)
