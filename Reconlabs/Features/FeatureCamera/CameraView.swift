@@ -30,11 +30,11 @@ public struct CameraView: View {
         .padding(EdgeInsets(top: 0, leading: 16, bottom: 0, trailing: 16))
         Spacer()
         HorizontalButtonView(xClickAction: {
-          Log.d("x click")
+          arView.transformX()
         }, yClickAction: {
-          Log.d("y click")
+          arView.transformY()
         }, zClickAction: {
-          Log.d("z click")
+          arView.transformZ()
         })
         CircleButtonView(takePhoto: {
           arView.takePhoto()
