@@ -1,6 +1,6 @@
 //
 //
-//
+// 카메라 촬영용, 프로젝트에서는 미사용
 // Created by Jarvis Bae on 2023/04/15.
 // Copyright (c) 2023 ADLiveOn All rights reserved.
 // Swift Version 5.0
@@ -36,7 +36,7 @@ public class CameraPreviewViewModel: NSObject, ObservableObject {
           let input = try? AVCaptureDeviceInput(device: camera),
           cameraSession.canAddInput(input)
     else {
-      print("Failed to configure input")
+      Log.e("Failed to configure input")
       return
     }
         
@@ -46,14 +46,14 @@ public class CameraPreviewViewModel: NSObject, ObservableObject {
     if cameraSession.canAddOutput(output) {
       cameraSession.addOutput(output)
     } else {
-      print("Failed to configure output")
+      Log.e("Failed to configure output")
       return
     }
     
     if cameraSession.canAddOutput(photoOutput) {
       cameraSession.addOutput(photoOutput)
     } else {
-      print("Failed to configure photo output")
+      Log.e("Failed to configure photo output")
     }
         
     cameraSession.commitConfiguration()
@@ -63,7 +63,7 @@ public class CameraPreviewViewModel: NSObject, ObservableObject {
 extension CameraPreviewViewModel: AVCapturePhotoCaptureDelegate {
   public func photoOutput(_: AVCapturePhotoOutput, didFinishProcessingPhoto photo: AVCapturePhoto, error _: Error?) {
     guard let imageData = photo.fileDataRepresentation() else {
-      print("Failed to get image data from captured photo")
+      Log.e("Failed to get image data from captured photo")
       return
     }
 

@@ -27,9 +27,9 @@ public class CoreDataHelper: CoreDataHelperProtocol {
     newPhoto.createDate = Date()
     do {
       try context.save()
-      print("Photo saved to Core Data")
+      Log.d("Photo saved to Core Data")
     } catch {
-      print("Error saving photo to Core Data: \(error)")
+      Log.e("Error saving photo to Core Data: \(error)")
     }
   }
    
@@ -38,10 +38,10 @@ public class CoreDataHelper: CoreDataHelperProtocol {
 
     do {
       let photos = try context.fetch(fetchRequest)
-      print("Loaded \(photos.count) photos from Core Data")
+      Log.d("Loaded \(photos.count) photos from Core Data")
       return photos
     } catch {
-      print("Error loading photos from Core Data: \(error)")
+      Log.e("Error loading photos from Core Data: \(error)")
       return []
     }
   }

@@ -22,7 +22,7 @@ struct ReconlabsApp: App {
         refreshToggle = false
       })
       .fullScreenCover(isPresented: $isPresented, content: {
-        CameraView(coreDataHelper: coreDataHelper, onCloseClick: {
+        CameraView(coreDataHelper: coreDataHelper, arView: ARView(coreDataHelper: coreDataHelper), onCloseClick: {
           isPresented = false
           refreshToggle = true
         })

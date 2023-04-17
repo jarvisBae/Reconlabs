@@ -10,14 +10,14 @@ import SwiftUI
 
 public struct CameraView: View {
   let coreDataHelper: CoreDataHelper
+  @State var arView: ARView
   let onCloseClick: () -> Void
-  @State private var arView: ARView
   
-  init(coreDataHelper: CoreDataHelper, onCloseClick: @escaping () -> Void) {
-    self.coreDataHelper = coreDataHelper
-    self.onCloseClick = onCloseClick
-    self._arView = State(initialValue: ARView(coreDataHelper: coreDataHelper))
-  }
+//  init(coreDataHelper: CoreDataHelper, onCloseClick: @escaping () -> Void) {
+//    self.coreDataHelper = coreDataHelper
+//    self.onCloseClick = onCloseClick
+//    self._arView = State(initialValue: ARView(coreDataHelper: coreDataHelper))
+//  }
     
   public var body: some View {
     ZStack {

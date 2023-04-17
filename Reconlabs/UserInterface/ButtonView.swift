@@ -43,7 +43,7 @@ public struct ButtonView: View {
 struct ButtonView_Previews: PreviewProvider {
   static var previews: some View {
     ButtonView(title: "AR Camera", imageName: "camera") {
-      print("tap button")
+      
     }
   }
 }

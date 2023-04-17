@@ -18,7 +18,7 @@ public struct MainView: View {
       VStack {
         ButtonView(title: "AR Camera", imageName: "camera", action: onButtonClick)
         Spacer()
-        ImageGridView(refreshToggle: $refreshToggle, coreDataHelper: coreDataHelper)
+        ImageGridView(refreshToggle: $refreshToggle, viewModel: ImageGridViewModel(coreDataHelper: coreDataHelper))
       }
       .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
     }

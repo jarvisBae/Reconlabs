@@ -20,6 +20,7 @@
 		9B302E1C29E98F8C00F571CB /* ReconlabsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B302E1B29E98F8C00F571CB /* ReconlabsUITestsLaunchTests.swift */; };
 		9B302E2C29E9912000F571CB /* .swiftformat in Resources */ = {isa = PBXBuildFile; fileRef = 9B302E2A29E9912000F571CB /* .swiftformat */; };
 		9B302E2D29E9912000F571CB /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 9B302E2B29E9912000F571CB /* .swiftlint.yml */; };
+		9B657B6629ED837F0067764A /* ImageGirdViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B657B6529ED837F0067764A /* ImageGirdViewModel.swift */; };
 		9B680EA829EB185600438853 /* CameraPreviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B680EA129EB185600438853 /* CameraPreviewViewModel.swift */; };
 		9B680EA929EB185600438853 /* HorizontalButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B680EA229EB185600438853 /* HorizontalButtonView.swift */; };
 		9B680EAA29EB185600438853 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B680EA329EB185600438853 /* ButtonView.swift */; };
@@ -67,6 +68,7 @@
 		9B302E1B29E98F8C00F571CB /* ReconlabsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReconlabsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9B302E2A29E9912000F571CB /* .swiftformat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .swiftformat; sourceTree = "<group>"; };
 		9B302E2B29E9912000F571CB /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		9B657B6529ED837F0067764A /* ImageGirdViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGirdViewModel.swift; sourceTree = "<group>"; };
 		9B680EA129EB185600438853 /* CameraPreviewViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraPreviewViewModel.swift; sourceTree = "<group>"; };
 		9B680EA229EB185600438853 /* HorizontalButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalButtonView.swift; sourceTree = "<group>"; };
 		9B680EA329EB185600438853 /* ButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
@@ -197,6 +199,8 @@
 			isa = PBXGroup;
 			children = (
 				9B680EC129EB18D600438853 /* MainView.swift */,
+				9B10E38429EB1F7900F12BBC /* ImageGridView.swift */,
+				9B657B6529ED837F0067764A /* ImageGirdViewModel.swift */,
 			);
 			path = FeatureMain;
 			sourceTree = "<group>";
@@ -226,7 +230,6 @@
 				9B680EA629EB185600438853 /* CameraPreviewView.swift */,
 				9B680EA529EB185600438853 /* CircleButtonView.swift */,
 				9B680EA229EB185600438853 /* HorizontalButtonView.swift */,
-				9B10E38429EB1F7900F12BBC /* ImageGridView.swift */,
 				9B10E38629EB896700F12BBC /* ARView.swift */,
 			);
 			path = UserInterface;
@@ -443,6 +446,7 @@
 				9B680EB929EB187C00438853 /* CoreDataHelper.swift in Sources */,
 				9B302E0329E98F8C00F571CB /* Persistence.swift in Sources */,
 				9B680EA829EB185600438853 /* CameraPreviewViewModel.swift in Sources */,
+				9B657B6629ED837F0067764A /* ImageGirdViewModel.swift in Sources */,
 				9B302DFA29E98F8B00F571CB /* ReconlabsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

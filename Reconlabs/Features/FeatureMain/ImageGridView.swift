@@ -10,19 +10,12 @@ import SwiftUI
 
 struct ImageGridView: View {
   @Binding var refreshToggle: Bool
-  let coreDataHelper: CoreDataHelper
-  @State private var photos: [NPhotoEntity]
-  
-  init(refreshToggle: Binding<Bool>, coreDataHelper: CoreDataHelper) {
-    self._refreshToggle = refreshToggle
-    self.coreDataHelper = coreDataHelper
-    self._photos = State(initialValue: coreDataHelper.loadPhotos())
-  }
-  
+  @ObservedObject var viewModel: ImageGridViewModel
+
   private var columns: [GridItem] {
     var gridItems: [GridItem] = []
           
-    for _ in 0 ..< min(photos.count, 3) {
+    for _ in 0 ..< min(viewModel.photos.count, 3) {
       gridItems.append(GridItem(.flexible(), spacing: 16))
     }
     return gridItems
@@ -31,7 +24,7 @@ struct ImageGridView: View {
   var body: some View {
     ScrollView {
       LazyVGrid(columns: columns, alignment: .center, spacing: 16) {
-        ForEach(photos, id: \.self) { photo in
+        ForEach(viewModel.photos, id: \.self) { photo in
           if let imageData = photo.imageData, let uiImage = UIImage(data: imageData) {
             Image(uiImage: uiImage)
               .resizable()
@@ -41,7 +34,7 @@ struct ImageGridView: View {
       }
       .padding(.all)
       .onChange(of: refreshToggle) { _ in
-        photos = coreDataHelper.loadPhotos()
+        viewModel.loadPhotos()
       }
     }
   }
